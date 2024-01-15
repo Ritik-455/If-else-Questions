@@ -1,0 +1,13 @@
+.layer {
+    left: -100%;
+    transition: 300ms;
+}
+
+.left-0 {
+    left: 0;
+}
+
+
+.cusor-pointer {
+    cursor: pointer;
+}

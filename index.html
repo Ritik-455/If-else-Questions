@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let EnteredUsername = prompt('Enter Username')
+        let EnteredPassword = prompt('Enter Password')
+
+        const usename = "anshul"
+        const password = "anshul@123"
+
+        if (usename === EnteredUsername && password === EnteredPassword) {
+            console.log('successfully login')
+        } else if (EnteredUsername === "" && EnteredPassword === "") {
+            console.log('empty')
+        }
+        else {
+            console.log('login failed')
+        }
+
+        let num1 = 40
+        let num2 = 30
+
+        if (num1 > num2) {
+            console.log(`${num1} is greater`)
+        } else {
+            console.log(`${num2} is greater`)
+        }
+
+        let num3 = 11
+
+        if (num3 % 2 === 0) {
+            console.log(`number is even`)
+        } else {
+            console.log(`number is odd`)
+        }
+
+        let num = 0
+
+        if (num > 0) {
+            console.log(`number is positive`)
+        } else if (num < 0) {
+            console.log(`number is negative`)
+        } else {
+            console.log(`number is Zero`)
+        }
+
+
+        let side1 = 1
+        let side2 = 3
+        let side3 = 2
+
+        if (side1 === side2 && side2 === side3) {
+            console.log(`its a equilateral triangle`)
+        } else if (side1 === side2 || side2 === side3 || side1 === side3) {
+            console.log(`its a isoceles triangle`)
+        } else {
+            console.log(`its a scalen triangle`)
+        }
+
+        let num4 = 10
+        let num5 = 20
+        let num6 = 4
+
+        if (num1 > num2 && num1 > num3) {
+            console.log(`num1 (${num1}) is greater `)
+        } else if (num2 > num1 && num2 > num3) {
+            console.log(`num2 (${num2}) is greater`)
+        } else {
+            console.log(` num3 (${num3}) is greater`)
+        }
+
+
+        let PurchaseAmount = 2500
+
+        if (PurchaseAmount >= 2000) {
+            console.log(` You Got 30% Discount your final value is ${PurchaseAmount - PurchaseAmount * 30 / 100}`)
+        } else if (PurchaseAmount >= 1500) {
+            console.log(` You Got 15% Discount your final value is ${PurchaseAmount - PurchaseAmount * 15 / 100}`)
+        } else {
+            console.log(` You Got 5% Discount your final value is ${PurchaseAmount - PurchaseAmount * 5 / 100}`)
+
+        }
+        let year = prompt('enter year')
+
+        const year = 2024
+
+        if (year % 4 == 0 && year % 100 != 0) {
+            console.log("this is a leap year")
+        } else if (year % 400 == 0) {
+            console.log("this is a leap year")
+        }
+        else {
+            console.log("this is not a leap year")
+        }
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
