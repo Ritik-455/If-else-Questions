@@ -103,6 +103,66 @@
             console.log("this is not a leap year")
         }
 
+        let pass = "789515135153151"
+
+        if (pass.length < 6) {
+            console.log("password is weak")
+        } else if (pass.length > 6 && pass.length < 10) {
+            console.log("password is medium")
+        } else (
+            console.log("password is strong")
+        )
+
+        let age = "20"
+
+        if (age < 12) {
+            console.log("the price of ticket is $5")
+        } else if (age > 12 && age < 64) {
+            console.log("the price of ticket is $10")
+        } else {
+            console.log("the price of ticket is $7")
+        }
+
+         let num7 = -5
+         let num8 = 5
+         let num9 = 0
+         if (num7+num8+num9 < 0) {
+            console.log("this is negative number")
+         } else if(num7+num8+num9 > 0) {
+            console.log("this number is positive number")
+         }else{
+            console.log("this is zero")
+         }
+
+        let BMI = 80
+
+        if (BMI < 18.5) {
+            console.log("Under weight")
+        } else if (BMI >= 18.5 && BMI <= 24.9) {
+            console.log("Normal weight")
+        } else if (BMI >= 25 && BMI <= 29.9) {
+            console.log("Overweight")
+        } else(
+            console.log("Obese")
+        )
+        function isPalindrome(word) {
+            // // Convert the word to lowercase to make the comparison case-insensitive
+            word = word.toLowerCase();
+
+            // Check if the word is equal to its reverse
+            return word === word.split('').reverse().join('');
+        }
+
+        // Get user input
+        let user_input = "naman";
+
+        // Check if the input is a palindrome
+        if (isPalindrome(user_input)) {
+            console.log(user_input + " is a palindrome.");
+        } else {
+            console.log(user_input + " is not a palindrome.");
+        }
+
 
 
     </script>
